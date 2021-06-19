@@ -1,0 +1,120 @@
+:root {
+    --red: #E50914;
+    --black: #0f0f0f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    font: 1em/1.5 My Gill Sans, Lato, sans-serif;
+    color: white;
+}
+
+header .container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.netflix-logo {
+    color: var(--red);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+nav a {
+    color:rgba(240, 248, 255, 0.754);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav a:hover {
+    color:azure;
+}
+
+
+/* serie principal */
+
+.main-poster {
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/breaking-bad-capa.jpg');
+    height: 600px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+}
+
+.sinopse {
+    margin-top: 55px;
+    width: 40%;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    
+}
+
+main .container {
+    margin-left: 20px;
+}
+
+
+button {
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color:lightgray;
+} 
+
+button i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+nav i {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+/* carrossel */
+
+.box-serie {
+    width: 90%;
+    height: 450px;
+    
+}
+
+.carrossel-series {
+    margin-top: 10px;
+}
+
+.category {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 700px){
+    header .container {
+        flex-direction: column;
+    }
+}
